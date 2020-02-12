@@ -1,2 +1,2 @@
 # Battleship
-![Drag Racing](Image/SoftwareProject2.png)
+![Drag Racing](Images/SoftwareProject2.png)
