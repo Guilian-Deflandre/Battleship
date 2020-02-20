@@ -26,8 +26,14 @@ boats ID from 1 to 5, one for each boats type. I decide to define a miss shot by
 alterable from the ConstantsConversion class. In this example, the user already try a
 shot in position A0 and C4 (a miss and a hit).
 
-![This is the caption\label{mylabel}](/url/of/image.png)
-See figure \ref{mylabel}.
+<p align="center">
+  <img src="Images/TypicalGridGame.png">
+  <figcaption> Fig. 1: Typical display of the game’s grid.</figcaption>
+</p>
+.caption[
+
+
+
 
 Once the problem of the implementation of the battleship itself solved, different
 concerns have arisen on the side of communication between the client and
@@ -43,3 +49,4 @@ try{...}catch(Execption e){...} blocks different from that of the main method.
 <sup>[1]</sup> : In order to simplify the communication between client and server, a maximum of variables have been defined in byte type.
 
 ![Drag Racing](Images/SoftwareProject2.png)
+
