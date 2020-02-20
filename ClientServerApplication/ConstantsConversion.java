@@ -1,7 +1,7 @@
 
 public class ConstantsConversion {
-	//Game options
-	public final static int GRID_SIZE = 10;
+    //Game options
+    public final static int GRID_SIZE = 10;
 	
     public final static byte UNEXPLORED = 0;
     public final static byte MISSED = -6;
@@ -12,7 +12,7 @@ public class ConstantsConversion {
     public final static byte SUBMARINE_SIZE = 3;
     public final static byte DESTROYER_SIZE = 2;
     
-    		// If you modify these 5 ID constants be sure they remain of different values
+    // If you modify these 5 ID constants be sure they remain of different values
     public final static byte CARRIER_ID = 5;
     public final static byte BATTLESHIP_ID = 4;
     public final static byte CRUISER_ID = 3;
