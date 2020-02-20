@@ -75,7 +75,7 @@ http://localhost:8028/RequestedContent
 where 8028 is the default port of the implementation that can be modify from the `ConstantConversion.java` files and `RequestedContent` can be either the root `\`, `play.html` or `halloffame.html'.
 
 
-## Softaware architecture.
+## Software architecture.
 A complete diagram of how the Battleship web server has been implemented
 can be seen in figure 3. This implementation is made of 10 Java files which are
 * **Message relatives:** `webServer.java`, `Battleship.java`, `HTTPRequest.java`.
