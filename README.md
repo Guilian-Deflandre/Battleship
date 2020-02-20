@@ -3,6 +3,19 @@ This project implement the Battleship game with both a client-server application
 
 ## Client-Server application.
 
+### Usage.
+The software is invoked on the command line with no additional arguments `java BattleshipServer` for the server and `java BattleshipClient` for the client.
+
+* **Client side:** A small menu is propose to the client 
+  ```
+  1) Try a tile
+  2) See game status
+  3) Quit
+  ```
+  The first choice permit to enter a grid location of a Battleship shoot. The format of the try is `XY` where `X` is a letter from `A` to `J` representing a grid line and `Y` is a number between `0` and `9` indication the grid column of the shoot. The second choice permit to display the current grid game status in the client side while the last choice stop the current part.
+
+* **Server side:** on the server output console, the position of the ships are display on the game grid for easier
+testing.
 ### Software architecture.
 
 This software consists of six classes that are briefly described below
@@ -38,6 +51,29 @@ the `Battleship` class. Note that it launch this last by giving it Socket and `c
 of these characters in order to extract their corresponding places in the alphabetic order.
 
 ## HTTP server.
+### Usage.
+The server software is invoked on the command line with one additional argument:
+```
+java WebServer maxThreads
+```
+where `maxThreads` is the maximum number of Java Threads that can be run in a concurrent way to handle the requests. One can also see this argument as the maximum number of requests that can be treated “simultaneously”.
+
+The server waits for `TCP` connections on a given port, and can handle `HTTP GET` and `HTTP POST` requests through that connection when established. Every HTML page returned by your server does not correspond to a file on disk, but is
+dynamically generated in your Java source code. A `HTTP GET` method is used to:
+* Request the `root` page, the `play.html` page or the `halloffame.html` of the server.
+* Request an evaluation of the coordinates selected by the user through an `AJAX` request. The server would then respond to this `AJAX` request by providing the number corresponding to the ship that was hit, or 0 if no ship was present at that
+location.
+* A `HTTP POST` method is used to request an evaluation of the coordinates in the case where Javascript is disabled on the browser.
+
+The `play.html` page is the main page. This is where the user interacts with the server through the browser to play the game. The `halloffame.html` page is a Hall of Fame, where the 10 best players are displayed. Each player is identified by his/her
+session cookie, and the score is the number of tries used to sink all ships (the less the better).
+
+A client browser can connect to the server using the url
+```
+http://localhost:8028/RequestedContent
+```
+where 8028 is the default port of the implementation that can be modify from the `ConstantConversion.java` files and `RequestedContent` can be either the root `\`, `play.html` or `halloffame.html'.
+
 
 ## Softaware architecture.
 A complete diagram of how the Battleship web server has been implemented
