@@ -72,7 +72,7 @@ A client browser can connect to the server using the url
 ```
 http://localhost:8028/RequestedContent
 ```
-where 8028 is the default port of the implementation that can be modify from the `ConstantConversion.java` files and `RequestedContent` can be either the root `\`, `play.html` or `halloffame.html'.
+where 8028 is the default port of the implementation that can be modify from the `ConstantConversion.java` files and `RequestedContent` can be either the root `\`, `play.html` or `halloffame.html.
 
 
 ## Software architecture.
