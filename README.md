@@ -1,7 +1,7 @@
 # Battleship.
 This project implement the Battleship game with both a client-server application and an HTTP server using Java language and more precisely Java Sockets. 
 
-# Table of content.
+## Table of content.
 - [Client-Server application.](#client-server-application)
    * [Usage.](#usage)
    * [Software architecture.](#software-architecture)
