@@ -1,6 +1,17 @@
 # Battleship.
 This project implement the Battleship game with both a client-server application and an HTTP server using Java language and more precisely Java Sockets. 
 
+# Table of content.
+- [Client-Server application.](#client-server-application)
+   * [Usage.](#usage)
+   * [Software architecture.](#software-architecture)
+   * [Multi-thread coordination.](#multi-thread-coordination)
+   * [Limits.](#limits)
+- [HTTP server.](#http-server)
+   * [Usage.](#usage-1)
+   * [Software architecture.](#software-architecture-1)
+   * [Limits.](#limits-1)
+
 ## Client-Server application.
 
 ### Usage.
@@ -75,7 +86,7 @@ http://localhost:8028/RequestedContent
 where 8028 is the default port of the implementation that can be modify from the `ConstantConversion.java` files and `RequestedContent` can be either the root `\`, `play.html` or `halloffame.html`.
 
 
-## Software architecture.
+### Software architecture.
 A complete diagram of how the Battleship web server has been implemented
 can be seen in figure 3. This implementation is made of 10 Java files which are
 * **Message relatives:** `webServer.java`, `Battleship.java`, `HTTPRequest.java`.
@@ -104,7 +115,7 @@ These are briefly describe above.
   Fig. 3: General architecture of the Battleship HTTP server implementation.
 </p>
 
-## Limits.
+### Limits.
 Client's cookie expire after 30 minutes of client inactivity. 
 Another trouble in this implementation occur during browser queries. Whether one attempts to communicate through a `POST` method of a form or a `GET` method of a JavaScript code, from time to time some little bugs occurs and the user request is not even send to the server. However, during all our development it was impossible for us to correct these and these two methods still work most of the time.
 The `maxThreads` values, which set the maximum number of thread working together, has been limited at 20 for security reasons.
