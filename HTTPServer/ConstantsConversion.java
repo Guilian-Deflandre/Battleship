@@ -14,7 +14,7 @@ public class ConstantsConversion {
     																						   DESTROYER_SIZE;
     public final static int MAX_NB_TRIES = 70;
     
-    	// If you modify these 5 ID constants be sure they remain of different values
+    // If you modify these 5 ID constants be sure they remain of different values
     public final static byte CARRIER_ID = 5;
     public final static byte BATTLESHIP_ID = 4;
     public final static byte CRUISER_ID = 3;
