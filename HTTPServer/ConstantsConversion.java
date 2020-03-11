@@ -67,7 +67,7 @@ public class ConstantsConversion {
     
   // All possible header content
     enum HEADER_FIELD{
-    		ACCEPT("Accept"),
+    	ACCEPT("Accept"),
         ACCEPT_CHARSET("Accept-Charset"),
         ACCEPT_ENCODING("Accept-Encoding"),
         ACCEPT_LANGUAGE("Accept-Language"),
@@ -120,7 +120,7 @@ public class ConstantsConversion {
         WARNING("Warning"),
         WWW_AUTHENTICATE("WWW-Authenticate");
     	
-		private final String name;
+	private final String name;
 		
         /*CONSTRUCTOR*/
         HEADER_FIELD(String name) {
