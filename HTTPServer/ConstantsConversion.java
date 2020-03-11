@@ -1,6 +1,6 @@
 public class ConstantsConversion {
-	//Game options
-	public final static int GRID_SIZE = 10;
+    //Game options
+    public final static int GRID_SIZE = 10;
 	
     public final static byte UNEXPLORED = 0;
     public final static byte MISSED = -6;
